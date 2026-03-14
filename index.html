@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mycoloop Studio — Something is growing</title>
+  <meta name="description" content="Mycoloop Studio is building the next layer of the creative web. Get early access." />
+  <meta property="og:title" content="Mycoloop Studio — Something is growing" />
+  <meta property="og:description" content="Building something new. Join the waitlist." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0a0d0b" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated mycelium network background -->
+  <canvas id="mycelium-canvas" class="mycelium-bg" aria-hidden="true"></canvas>
+
+  <div class="site-wrapper">
+
+    <!-- ── Header ── -->
+    <header>
+      <a href="#" class="logo" aria-label="Mycoloop Studio home">
+        <!-- Inline SVG logo mark: stylised loop + spore -->
+        <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="16" cy="16" r="15" stroke="#3ddc84" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <path d="M16 8 C10 8 8 12 10 16 C12 20 16 20 16 24" stroke="#3ddc84" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M16 8 C22 8 24 12 22 16 C20 20 16 20 16 24" stroke="#3ddc84" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3 2"/>
+          <circle cx="16" cy="8" r="2" fill="#3ddc84"/>
+          <circle cx="16" cy="24" r="2" fill="#3ddc84" opacity="0.5"/>
+        </svg>
+        <span class="logo-text">Mycoloop <span>Studio</span></span>
+      </a>
+
+      <div class="badge">
+        <span class="badge-dot" aria-hidden="true"></span>
+        Stealth mode
+      </div>
+    </header>
+
+    <!-- ── Hero ── -->
+    <main>
+      <section class="hero" aria-labelledby="hero-heading">
+
+        <p class="hero-eyebrow">
+          <span class="eyebrow-line" aria-hidden="true"></span>
+          Early access
+          <span class="eyebrow-line" aria-hidden="true"></span>
+        </p>
+
+        <h1 class="hero-title" id="hero-heading">
+          Something&nbsp;is<br />
+          <span class="highlight">growing</span>
+        </h1>
+
+        <p class="hero-description">
+          We're quietly building a new kind of creative studio at the intersection
+          of nature, code, and collaboration. Be the first to know when we emerge.
+        </p>
+
+        <!-- Email signup -->
+        <form
+          class="signup-form"
+          id="signup-form"
+          novalidate
+          aria-label="Early access waitlist"
+        >
+          <label for="email-input" class="sr-only">Email address</label>
+          <input
+            type="email"
+            id="email-input"
+            name="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+          />
+          <button type="submit" class="btn-primary">Notify me</button>
+        </form>
+
+        <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+
+        <div class="hero-divider" aria-hidden="true"></div>
+
+      </section>
+
+      <!-- ── Feature strip ── -->
+      <section class="features" aria-label="What we're building">
+        <div class="feature-item">
+          <span class="feature-icon" aria-hidden="true">🍄</span>
+          <span>Grown in nature</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon" aria-hidden="true">🔁</span>
+          <span>Built on loops</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon" aria-hidden="true">🌐</span>
+          <span>Open by design</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon" aria-hidden="true">✨</span>
+          <span>Something new</span>
+        </div>
+      </section>
+    </main>
+
+    <!-- ── Footer ── -->
+    <footer>
+      <p class="footer-copy">&copy; 2026 Mycoloop Studio. All rights reserved.</p>
+      <nav aria-label="Footer links">
+        <ul class="footer-links">
+          <li><a href="mailto:hello@mycoloop.studio">Contact</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+  </div><!-- /.site-wrapper -->
+
+  <script src="script.js"></script>
+</body>
+</html>
